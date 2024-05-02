@@ -1,0 +1,170 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing border-box */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Base font size and line height */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Set background color */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #04364A;
+  color: #eeeeee;
+}
+
+/* Centering the app */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Styling the heading */
+h1 {
+  font-size: 4rem; /* Increased size */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: capitalize; /* Capitalize text */
+  color: #76abae; /* Light blue color */
+}
+
+/* Styling the bet container */
+.bet-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styling the bet label */
+.bet-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #eeeeee;
+}
+
+/* Styling the bet input */
+#betInput {
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #576266;
+}
+
+/* Styling the place bet button */
+#placeBetBtn {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  background-color: #2a6c69;
+  color: #ffffff;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  width: 80px; /* Adjusted width */
+}
+
+/* Styling the balance */
+#balanceDisplay, #withdrawDisplay {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #eeeeee;
+  margin-top: 20px;
+  text-align: center; /* Center text */
+}
+
+/* Styling the withdraw button */
+#withdrawBtn {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  background-color: #04364A;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 80px; /* Adjusted width */
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Styling the game board */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 25px auto;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  color: #eeeeee;
+}
+
+/* Styling the game cell */
+.cell {
+  width: 100%;
+  height: 100px;
+  background: #31363f;
+  border: 1px solid #576266;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #28a745;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+/* Hiding unrevealed cells */
+.cell:not(.revealed) {
+  color: transparent;
+}
+
+/* Hover effect on cells */
+.cell:hover {
+  background-color: #76abae;
+  transform: scale(1.05);
+  border: 1px solid #76abae;
+}
+
+/* Styling the withdraw button */
+.withdraw-btn {
+  background-color: #277048;
+  color: #eeeeee;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Hover effect on withdraw button */
+.withdraw-btn:hover {
+  background-color: #2a6c69;
+}
+
+/* Styling the error message */
+.error-msg {
+  font-size: 1rem; /* Adjust font size */
+  color: #ff5a5f; /* Red color */
+  display: block;
+  margin-top: 10px; /* Adjust margin */
+  text-align: center; /* Center text */
+}
